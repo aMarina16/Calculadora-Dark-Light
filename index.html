@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora Dark/Light</title>
+</head>
+<body>
+    <div class="main color">
+        <form name="calculadora_dl">
+            <input type="text" name="display" class="display color" disabled>
+            <input type="button" value="C" class="clear color" onclick="Limpar()"><br>
+            
+            <input type="button" name="botao7" value="7" class="num color" onclick="num_no_display(botao7.value)">
+            <input type="button" name="botao8" value="8" class="num color" onclick="num_no_display(botao8.value)">
+            <input type="button" name="botao9" value="9" class="num color" onclick="num_no_display(botao9.value)">
+            <input type="button" name="botaoadi" value="+" class="num blue" onclick="num_no_display(botaoadi.value)"><br>
+
+            <input type="button" name="botao4" value="4" class="num color" onclick="num_no_display(botao4.value)">
+            <input type="button" name="botao5" value="5" class="num color" onclick="num_no_display(botao5.value)">
+            <input type="button" name="botao6" value="6" class="num color" onclick="num_no_display(botao6.value)">
+            <input type="button" name="botaosub" value="-" class="num blue" onclick="num_no_display(botaosub.value)"><br>
+
+            <input type="button" name="botao1" value="1" class="num color" onclick="num_no_display(botao1.value)">
+            <input type="button" name="botao2" value="2" class="num color" onclick="num_no_display(botao2.value)">
+            <input type="button" name="botao3" value="3" class="num color" onclick="num_no_display(botao3.value)">
+            <input type="button" name="botaomult" value="*" class="num blue" onclick="num_no_display(botaomult.value)"><br>
+
+            <input type="button" name="botao0" value="0" class="num color" onclick="num_no_display(botao0.value)">
+            <input type="button" name="botaoponto" value="." class="num color" onclick="num_no_display(botaoponto.value)">
+            <input type="button" name="botaoigual" value="=" class="num laranja" onclick="Calcular(botaoigual.value)">
+            <input type="button" name="botaodiv" value="/" class="num blue" onclick="num_no_display(botaodiv.value)"><br>
+
+            <div class="tema">
+                <label for="dark">Dark</label>
+                <input type="radio" name="tema" id="dark" onclick="Dark()" value="dark">
+                <label for="light">Light</label>
+                <input type="radio" name="tema" id="light" onclick="Light()" value="light">
+            </div>
+
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
